@@ -8,35 +8,46 @@ We use SBT (Simple Build Tool) to install Scala and other dependencies. Since Li
 	mkdir -p lib
 	cp $LINGPIPE_DIST_DIR/lingpipe-*.jar lib
 
-As a starting point, all the demo code from the Lingpipe 4.1.0 distribution has been re-written using Scala 2.9.2. This consists of the following packages.
-
-String Comparison - stringCompare (strcmp)
-Sentence Detection - sentences (sentence)
-Part of Speech Tagging - posTags
-Named Entity Recognition - ne
-Word Sense Disambiguation - wordSense
-Expectation Maximization - em
-Singular Value Decomposition - svd
-Character Language Modeling - lm
-Spelling Correction - querySpellChecker
-Database Text Mining - db
-Interesting Phrase Detection - interestingPhrases
-Hypenation and Syllabification - hyphenation
-Chinese Word Segmentation - chineseTokens
-Logistic Regression - logistic-regression
-Conditional Random Fields - crf
-Topic Classification - classify
-Language Identification - langid
-Clustering - cluster
-Sentiment Analysis - sentiment
-
-The code uses the demo data that is provided along with the LingPipe 4.1.0 distribution. It expects the data to be rooted under $PROJECT_ROOT/data, so you should link it appropriately, like so:
+The code expects to see the demo data that is provided along with the LingPipe 4.1.0 distribution in the data directory, so you should link it in like so. Some of the code also expects to see the pre-built models supplied (the demos dont produce all the models they consume, so you may want to copy the models over to your local (to your project) models directory. Alternatively, if you are feeling more confident (ie, you know you can regenerate the models), then you can just link it in.
 
 	cd $PROJECT_ROOT (this directory)
 	ln -s $LINGPIPE_DIST_DIR/demos/data .
+        ln -s $LINGPIPE_DIST_DIR/demos/models .
+
+The code is based on the demos code from the LingPipe 4.1.0 distribution and consists of the following packages.
+
+## String Comparison
+
+Code demonstrating various string distance measures available in LingPipe. The LingPipe demo code is in demos/stringCompare, the scalingpipe equivalent is in the package o.s.s.strcmp. Read the LingPipe [String Comparison Tutorial](http://alias-i.com/lingpipe/demos/tutorial/stringCompare/read-me.html) for more details.
+
+## Sentence Detection
+
+Code demonstrating sentence splitting and chunking, evaluating and tuning sentence models. The LingPipe demo code is in demos/sentences, the scalingpipe equivalent is in the package o.s.s.sentence. Read the LingPipe [Sentences Tutorial](http://alias-i.com/lingpipe/demos/tutorial/sentences/read-me.html) for more details.
+
+The evaluation and tuning demos require the [GENIA Corpus (TGZ)](http://www.nactem.ac.uk/genia/genia-corpus/term-corpus) to be downloaded - the link in the original LingPipe docs is outdated. The TGZ file can be expanded into the demos/data directory of the LingPipe distribution.
+
+## Part of Speech Tagging
+
+Code demonstrating part of speech tagging and phrase chunking. The LingPipe demo code is in demos/posTags, the scalingpipe equivalent is in the package o.s.s.postag. Read the LingPipe [Part of Speech Tutorial](http://alias-i.com/lingpipe/demos/tutorial/posTags/read-me.html) for more details.
+
+You will need to download the Brown Corpus from NLTK, the GENIA POS corpus from GENIA and the MedPost corpus from Medpost. The GENIA URL is outdated and should be [this one](http://www.nactem.ac.uk/genia/genia-corpus/pos-annotation). All of the corpora should be downloaded into the LingPipe demos/data directory.
+
+## Named Entity Recognition - ne
+## Word Sense Disambiguation - wordSense
+## Expectation Maximization - em
+## Singular Value Decomposition - svd
+## Character Language Modeling - lm
+## Spelling Correction - querySpellChecker
+## Database Text Mining - db
+## Interesting Phrase Detection - interestingPhrases
+## Hypenation and Syllabification - hyphenation
+## Chinese Word Segmentation - chineseTokens
+## Logistic Regression - logistic-regression
+## Conditional Random Fields - crf
+## Topic Classification - classify
+## Language Identification - langid
+## Clustering - cluster
+## Sentiment Analysis - sentiment
 
 Additional data to run these examples:
 
-For sentence model evaluation:
-GENIA Corpus: the link in the LingPipe docs are outdated, use this one instead:
-http://www.nactem.ac.uk/genia/genia-corpus/term-corpus

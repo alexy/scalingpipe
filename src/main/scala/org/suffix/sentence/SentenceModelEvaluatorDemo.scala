@@ -19,7 +19,7 @@ import com.aliasi.sentences.SentenceModel
 object SentenceModelEvaluatorDemo extends App {
   val sentenceModel = new MedlineSentenceModel()
   val sentenceModelEvaluator = new SentenceModelEvaluator(sentenceModel)
-  sentenceModelEvaluator.evaluate(false)
+  sentenceModelEvaluator.evaluate(true)
 }
 
 class SentenceModelEvaluator(sentenceModel: SentenceModel) {
@@ -92,12 +92,13 @@ class GeniaSentenceParser(handler: ObjectHandler[Chunking]) extends
     
     def handleSentenceTexts(texts: List[String]): Unit = {
       val lengths = texts.map(x => x.length())
-      val buf = texts.foldLeft("")(_ + " " + _).toCharArray()
-      val chunking = new ChunkingImpl(buf, 0, buf.length)
+      val buf = texts.foldLeft("")(_ + " " + _)
+      val chunking = new ChunkingImpl(buf)
       var offset = 0
       for (i <- 0 until texts.size) {
         val chunk = ChunkFactory.createChunk(offset, 
           offset + lengths(i), SentenceChunker.SENTENCE_CHUNK_TYPE)
+        Console.println("chunk=" + buf.substring(chunk.start(), chunk.end()))
         chunking.add(chunk)
         offset += lengths(i) + 1
       }
