@@ -1,2 +1,4 @@
 target*
 .pom.yml
+lib/*
+data/*
