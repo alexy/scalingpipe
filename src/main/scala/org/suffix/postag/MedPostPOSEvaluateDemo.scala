@@ -1,16 +1,14 @@
 package org.suffix.postag
 
 import java.io.File
-import com.aliasi.hmm.HmmCharLmEstimator
-import com.aliasi.hmm.HmmDecoder
-import com.aliasi.tag.TaggerEvaluator
-import com.aliasi.tag.NBestTaggerEvaluator
-import com.aliasi.tag.MarginalTaggerEvaluator
-import com.aliasi.corpus.ObjectHandler
-import com.aliasi.tag.Tagging
+
+import scala.collection.JavaConversions.mutableSetAsJavaSet
 import scala.collection.mutable.HashSet
-import collection.JavaConversions._
+
 import com.aliasi.classify.ConfusionMatrix
+import com.aliasi.corpus.ObjectHandler
+import com.aliasi.hmm.{HmmCharLmEstimator, HmmDecoder}
+import com.aliasi.tag.{MarginalTaggerEvaluator, NBestTaggerEvaluator, TaggerEvaluator, Tagging}
 
 object MedPostPOSEvaluateDemo extends App {
 

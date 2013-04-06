@@ -1,8 +1,9 @@
 package org.suffix.strcmp
 
-import com.aliasi.tokenizer.IndoEuropeanTokenizerFactory
+import scala.collection.JavaConversions.asScalaSet
+
 import com.aliasi.spell.TfIdfDistance
-import collection.JavaConversions._
+import com.aliasi.tokenizer.IndoEuropeanTokenizerFactory
 
 object TfIdfDistanceDemo extends App {
 

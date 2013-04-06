@@ -1,10 +1,11 @@
 package org.suffix.sentence
 
-import com.aliasi.tokenizer.IndoEuropeanTokenizerFactory
-import com.aliasi.sentences.MedlineSentenceModel
-import scala.io.Source
-import collection.JavaConversions._
+import scala.collection.JavaConversions.bufferAsJavaList
 import scala.collection.mutable.ArrayBuffer
+import scala.io.Source
+
+import com.aliasi.sentences.MedlineSentenceModel
+import com.aliasi.tokenizer.IndoEuropeanTokenizerFactory
 
 object SentenceBoundaryDemo extends App {
   

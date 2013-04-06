@@ -1,9 +1,9 @@
 package org.suffix.sentence
 
-import com.aliasi.tokenizer.IndoEuropeanTokenizerFactory
-import com.aliasi.sentences.MedlineSentenceModel
-import com.aliasi.sentences.SentenceChunker
 import scala.io.Source
+
+import com.aliasi.sentences.{MedlineSentenceModel, SentenceChunker}
+import com.aliasi.tokenizer.IndoEuropeanTokenizerFactory
 
 object SentenceChunkerDemo extends App {
 

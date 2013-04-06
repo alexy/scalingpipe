@@ -1,20 +1,16 @@
 package org.suffix.sentence
 
-import com.aliasi.tokenizer.IndoEuropeanTokenizerFactory
-import com.aliasi.sentences.MedlineSentenceModel
-import com.aliasi.sentences.SentenceChunker
-import com.aliasi.sentences.SentenceEvaluator
-import com.aliasi.corpus.XMLParser
-import com.aliasi.corpus.ObjectHandler
-import com.aliasi.chunk.Chunking
 import java.io.File
-import com.aliasi.xml.DelegatingHandler
-import com.aliasi.chunk.ChunkingImpl
-import com.aliasi.chunk.ChunkFactory
+
 import scala.collection.mutable.ArrayBuffer
-import com.aliasi.xml.TextAccumulatorHandler
+
 import org.xml.sax.helpers.DefaultHandler
-import com.aliasi.sentences.SentenceModel
+
+import com.aliasi.chunk.{ChunkFactory, Chunking, ChunkingImpl}
+import com.aliasi.corpus.{ObjectHandler, XMLParser}
+import com.aliasi.sentences.{MedlineSentenceModel, SentenceChunker, SentenceEvaluator, SentenceModel}
+import com.aliasi.tokenizer.IndoEuropeanTokenizerFactory
+import com.aliasi.xml.{DelegatingHandler, TextAccumulatorHandler}
 
 object SentenceModelEvaluatorDemo extends App {
   val sentenceModel = new MedlineSentenceModel()

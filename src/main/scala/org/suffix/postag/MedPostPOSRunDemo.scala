@@ -1,17 +1,13 @@
 package org.suffix.postag
 
-import com.aliasi.hmm.HmmCharLmEstimator
-import java.io.File
-import com.aliasi.io.FileExtensionFilter
-import com.aliasi.util.AbstractExternalizable
-import java.io.ObjectInputStream
-import java.io.FileInputStream
-import com.aliasi.hmm.HiddenMarkovModel
-import com.aliasi.util.Streams
-import com.aliasi.hmm.HmmDecoder
-import com.aliasi.tokenizer.RegExTokenizerFactory
-import collection.JavaConversions._
+import java.io.{File, FileInputStream, ObjectInputStream}
+
+import scala.collection.JavaConversions.{asScalaBuffer, seqAsJavaList}
+
+import com.aliasi.hmm.{HiddenMarkovModel, HmmDecoder}
 import com.aliasi.tag.ScoredTagging
+import com.aliasi.tokenizer.RegExTokenizerFactory
+import com.aliasi.util.Streams
 
 object MedPostPOSRunDemo extends App {
 

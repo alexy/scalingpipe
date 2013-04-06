@@ -1,19 +1,15 @@
 package org.suffix.postag
 
 import java.io.File
-import com.aliasi.util.FastCache
-import com.aliasi.util.AbstractExternalizable
-import com.aliasi.hmm.HiddenMarkovModel
-import com.aliasi.hmm.HmmDecoder
-import com.aliasi.tokenizer.IndoEuropeanTokenizerFactory
-import collection.JavaConversions._
-import com.aliasi.chunk.Chunking
-import com.aliasi.tokenizer.TokenizerFactory
-import com.aliasi.chunk.Chunker
-import com.aliasi.util.Strings
+
+import scala.Array.canBuildFrom
+import scala.collection.JavaConversions.{asScalaBuffer, asScalaSet, bufferAsJavaList, seqAsJavaList}
 import scala.collection.mutable.ArrayBuffer
-import com.aliasi.chunk.ChunkingImpl
-import com.aliasi.chunk.ChunkFactory
+
+import com.aliasi.chunk.{ChunkFactory, Chunker, Chunking, ChunkingImpl}
+import com.aliasi.hmm.{HiddenMarkovModel, HmmDecoder}
+import com.aliasi.tokenizer.{IndoEuropeanTokenizerFactory, TokenizerFactory}
+import com.aliasi.util.{AbstractExternalizable, FastCache, Strings}
 
 object PhraseChunkingDemo extends App {
 

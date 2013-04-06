@@ -1,21 +1,18 @@
 package org.suffix.postag
 
-import com.aliasi.corpus.Parser
-import com.aliasi.corpus.ObjectHandler
-import com.aliasi.tag.Tagging
-import org.xml.sax.InputSource
-import collection.JavaConversions._
-import java.io.File
-import com.aliasi.io.FileExtensionFilter
-import com.aliasi.corpus.StringParser
+import java.io.{ByteArrayInputStream, ByteArrayOutputStream, File, FileInputStream}
+import java.util.zip.{ZipEntry, ZipInputStream}
+
+import scala.Array.canBuildFrom
+import scala.collection.JavaConversions.{asScalaIterator, bufferAsJavaList}
 import scala.collection.mutable.ArrayBuffer
-import java.util.zip.ZipInputStream
-import java.io.FileInputStream
-import java.util.zip.ZipEntry
-import java.io.ByteArrayOutputStream
-import java.io.ByteArrayInputStream
-import com.aliasi.util.Strings
-import com.aliasi.util.Iterators
+
+import org.xml.sax.InputSource
+
+import com.aliasi.corpus.{ObjectHandler, Parser, StringParser}
+import com.aliasi.io.FileExtensionFilter
+import com.aliasi.tag.Tagging
+import com.aliasi.util.{Iterators, Strings}
 
 trait PosCorpus {
   

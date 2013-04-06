@@ -1,17 +1,9 @@
 package org.suffix.postag
 
-import com.aliasi.hmm.HmmCharLmEstimator
 import java.io.File
-import com.aliasi.io.FileExtensionFilter
+
+import com.aliasi.hmm.HmmCharLmEstimator
 import com.aliasi.util.AbstractExternalizable
-import java.io.ObjectInputStream
-import java.io.FileInputStream
-import com.aliasi.hmm.HiddenMarkovModel
-import com.aliasi.util.Streams
-import com.aliasi.hmm.HmmDecoder
-import com.aliasi.tokenizer.RegExTokenizerFactory
-import collection.JavaConversions._
-import com.aliasi.tag.ScoredTagging
 
 object MedPostPOSTrainingDemo extends App {
 
