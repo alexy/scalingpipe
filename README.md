@@ -38,7 +38,10 @@ Code demonstrating building and evaluating Named Entiy Recognizers. The LingPipe
 
 The Gene NER (StatisticalNERDemo) uses the genetag data from the MedPost dataset that was needed for the POS Tagging code. Additionally you need to download the CoNLL Spanish NER (CoNLLSpanishNERDemo), gunzip and manually fix 3 of the of I tags to B tags (see the tutorial for files and line numbers). For the Arabic NER you have to download the ANER corpus and gazetteer and gunzip the gazetteers.
 
-## Word Sense Disambiguation - wordSense
+## Word Sense Disambiguation
+
+Code for parsing Senseval training and test files. Multiple senses for each ambiguous word is provided, along with test sentences containing the usage. The LingPipe code is in demos/wordSense, the scalingpipe equivalent is in the package o.s.wsd. Read the LingPipe [Word Sense Tutorial](http://alias-i.com/lingpipe/demos/tutorial/wordSense/read-me.html) for more details. You will need to download the Senseval files, links are on the LingPipe tutorial page. The scalingpipe code expects them in the data/senseval-en directory.
+
 ## Expectation Maximization - em
 ## Singular Value Decomposition - svd
 ## Character Language Modeling - lm
@@ -53,6 +56,4 @@ The Gene NER (StatisticalNERDemo) uses the genetag data from the MedPost dataset
 ## Language Identification - langid
 ## Clustering - cluster
 ## Sentiment Analysis - sentiment
-
-Additional data to run these examples:
 
