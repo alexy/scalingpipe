@@ -55,7 +55,11 @@ Implements the Expectation Maximization Algorithm to classify 20 newsgroup text.
 ## Chinese Word Segmentation - chineseTokens
 ## Logistic Regression - logistic-regression
 ## Conditional Random Fields - crf
-## Topic Classification - classify
+
+## Topic Classification
+
+Demo of classifying topic for 4 newsgroup (data supplied with LingPipe distribution) and cross validating and evaluating the classifiers. LingPipe code is in demps/classify, and corresponding scalingpipe code is in o.s.classify. More details on the [LingPipe Classification Tutorial](http://alias-i.com/lingpipe/demos/tutorial/classify/read-me.html).
+
 ## Language Identification - langid
 ## Clustering - cluster
 ## Sentiment Analysis - sentiment
