@@ -42,7 +42,10 @@ The Gene NER (StatisticalNERDemo) uses the genetag data from the MedPost dataset
 
 Code for parsing Senseval training and test files. Multiple senses for each ambiguous word is provided, along with test sentences containing the usage. The LingPipe code is in demos/wordSense, the scalingpipe equivalent is in the package o.s.wsd. Read the LingPipe [Word Sense Tutorial](http://alias-i.com/lingpipe/demos/tutorial/wordSense/read-me.html) for more details. You will need to download the Senseval files, links are on the LingPipe tutorial page. The scalingpipe code expects them in the data/senseval-en directory.
 
-## Expectation Maximization - em
+## Expectation Maximization 
+
+Implements the Expectation Maximization Algorithm to classify 20 newsgroup text. LingPipe code is in demos/em, the scalingpipe equivalent is in the package o.s.em. Read the LingPipe [Expectation Maximization Tutorial](http://alias-i.com/lingpipe/demos/tutorial/em/read-me.html) for more details. You will need to download the 20 newsgroup data (links on the LingPipe tutorial page), and the scalingpipe code expects it under the directory data/20newsgroups. Note that the code takes an extremely long time to complete - this is expected, the Java version takes about 4 hours to complete per the tutorial page.
+
 ## Singular Value Decomposition - svd
 ## Character Language Modeling - lm
 ## Spelling Correction - querySpellChecker
