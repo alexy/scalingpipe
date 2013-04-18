@@ -50,8 +50,12 @@ Implements the Expectation Maximization Algorithm to classify 20 newsgroup text.
 ## Character Language Modeling - lm
 ## Spelling Correction - querySpellChecker
 ## Database Text Mining - db
-## Interesting Phrase Detection - interestingPhrases
-## Hyphenation and Syllabification - hyphenation
+
+## Interesting Phrase Detection
+
+Finds interesting phrases based on collocation frequency of a word pair being higher than expected. The LingPipe code is in demos/interestingPhrases, the correspnding scalingpipe code is in the package o.s.sips. Read the [LingPipe Phrases Tutorial](http://alias-i.com/lingpipe/demos/tutorial/interestingPhrases/read-me.html) for more details. The data for this demo is included in the LingPipe distribution.
+
+## Hyphenation and Syllabification - hyphenation (data d/l-ed)
 ## Chinese Word Segmentation - chineseTokens
 ## Logistic Regression - logistic-regression
 ## Conditional Random Fields - crf
