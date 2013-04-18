@@ -51,7 +51,7 @@ Implements the Expectation Maximization Algorithm to classify 20 newsgroup text.
 ## Spelling Correction - querySpellChecker
 ## Database Text Mining - db
 ## Interesting Phrase Detection - interestingPhrases
-## Hypenation and Syllabification - hyphenation
+## Hyphenation and Syllabification - hyphenation
 ## Chinese Word Segmentation - chineseTokens
 ## Logistic Regression - logistic-regression
 ## Conditional Random Fields - crf
@@ -61,6 +61,11 @@ Implements the Expectation Maximization Algorithm to classify 20 newsgroup text.
 Demo of classifying topic for 4 newsgroup (data supplied with LingPipe distribution) and cross validating and evaluating the classifiers. LingPipe code is in demps/classify, and corresponding scalingpipe code is in o.s.classify. More details on the [LingPipe Classification Tutorial](http://alias-i.com/lingpipe/demos/tutorial/classify/read-me.html).
 
 ## Language Identification - langid
+
+Demo for training, cross-validating and using a language detection classifier using the Leipzig multi-language corpus. LingPipe code is in demos/langid and corrsponding scalingpipe code is in o.s.langdetect. See the [LingPipe Language ID Tutorial](http://alias-i.com/lingpipe/demos/tutorial/langid/read-me.html) for more information.
+
+Data needs to be downloaded manually, and the sentences.txt from each language distribution needs to be extracted into the data/leipzip directory as ${langid}-sentences.txt files. The scalingpipe code was run using sentences from Catalan (cat), English (eng), Finnish (fin), French (fra), Hindi (hin), Italian (ita), Japanese (jpn), Korean (kor), Polish (pol), Russian (rus), Spanish (spa), Turkish (tur) and Chinese (zho).
+
 ## Clustering - cluster
 ## Sentiment Analysis - sentiment
 

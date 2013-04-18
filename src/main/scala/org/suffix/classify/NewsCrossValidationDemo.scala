@@ -1,15 +1,11 @@
 package org.suffix.classify
 
 import java.io.File
-import com.aliasi.corpus.XValidatingObjectCorpus
-import com.aliasi.classify.Classified
-import com.aliasi.classify.Classification
-import com.aliasi.util.Files
 import java.util.Random
-import com.aliasi.classify.DynamicLMClassifier
-import com.aliasi.util.AbstractExternalizable
-import com.aliasi.classify.JointClassifier
-import com.aliasi.classify.JointClassifierEvaluator
+
+import com.aliasi.classify.{Classification, Classified, DynamicLMClassifier, JointClassifier, JointClassifierEvaluator}
+import com.aliasi.corpus.XValidatingObjectCorpus
+import com.aliasi.util.{AbstractExternalizable, Files}
 
 object NewsCrossValidationDemo extends App {
 
