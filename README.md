@@ -49,7 +49,12 @@ Implements the Expectation Maximization Algorithm to classify 20 newsgroup text.
 ## Singular Value Decomposition - svd
 ## Character Language Modeling - lm
 ## Spelling Correction - querySpellChecker
-## Database Text Mining - db
+
+## Database Text Mining
+
+Contains two demo programs to load up Medline abstracts into a MySQL database, then annotate sentences from it using a LingPipe chunking model. The annotations are also written out to the database, at which point you can use SQL to count and group them, etc. LingPipe code is in demos/db, corresponding scalingpipe code is in o.s.dbmining. Read the [LingPipe DB Mining Tutorial](http://alias-i.com/lingpipe/demos/tutorial/db/read-me.html) for more information.
+
+You will need a MySQL server to run this example. The SQL to build the database and tables can be found in src/main/sql/dbmining_schema.sql. The code also needs a new JAR file lingmed-1.3.jar provided in the LingPipe demos/lib directory - this needs to be copied to the lib directory of the scalingpipe project. It also needs the MySQL client JAR file (loaded automatically by build.sbt). It also needs a TokenShapeChunker model that is not available from the LingPipe distribution, you can get it from the [ScoobyDoobyDoo project](https://github.com/kjyv/ScoobyDoobyDoo). Finally the code looks for demos/data/medsamp2006.xml but the data shipped with the LingPipe distribution is in demos/data/medline/medsamp2010.xml and the code (both Java and Scala) fails with MalformedURLException when trying to parse it - to fix, remove the DOCTYPE line from the XML file.
 
 ## Interesting Phrase Detection
 
