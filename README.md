@@ -46,9 +46,9 @@ Code for parsing Senseval training and test files. Multiple senses for each ambi
 
 Implements the Expectation Maximization Algorithm to classify 20 newsgroup text. LingPipe code is in demos/em, the scalingpipe equivalent is in the package o.s.em. Read the LingPipe [Expectation Maximization Tutorial](http://alias-i.com/lingpipe/demos/tutorial/em/read-me.html) for more details. You will need to download the 20 newsgroup data (links on the LingPipe tutorial page), and the scalingpipe code expects it under the directory data/20newsgroups. Note that the code takes an extremely long time to complete - this is expected, the Java version takes about 4 hours to complete per the tutorial page.
 
-## Singular Value Decomposition - svd
 ## Character Language Modeling - lm
-## Spelling Correction - querySpellChecker
+## Singular Value Decomposition - svd
+## Conditional Random Fields - crf
 
 ## Database Text Mining
 
@@ -60,10 +60,10 @@ You will need a MySQL server to run this example. The SQL to build the database 
 
 Finds interesting phrases based on collocation frequency of a word pair being higher than expected. The LingPipe code is in demos/interestingPhrases, the correspnding scalingpipe code is in the package o.s.sips. Read the [LingPipe Phrases Tutorial](http://alias-i.com/lingpipe/demos/tutorial/interestingPhrases/read-me.html) for more details. The data for this demo is included in the LingPipe distribution.
 
+## Spelling Correction - querySpellChecker
 ## Hyphenation and Syllabification - hyphenation (data d/l-ed)
 ## Chinese Word Segmentation - chineseTokens
 ## Logistic Regression - logistic-regression
-## Conditional Random Fields - crf
 
 ## Topic Classification
 
@@ -76,5 +76,7 @@ Demo for training, cross-validating and using a language detection classifier us
 Data needs to be downloaded manually, and the sentences.txt from each language distribution needs to be extracted into the data/leipzip directory as ${langid}-sentences.txt files. The scalingpipe code was run using sentences from Catalan (cat), English (eng), Finnish (fin), French (fra), Hindi (hin), Italian (ita), Japanese (jpn), Korean (kor), Polish (pol), Russian (rus), Spanish (spa), Turkish (tur) and Chinese (zho).
 
 ## Clustering - cluster
+
 ## Sentiment Analysis - sentiment
 
+Demo for doing polarity and subjectivity analysis. LingPipe code is in demos/sentiment and corresponding scalingpipe code is in o.s.sentiment. See the [LingPipe Sentiment Tutorial](http://alias-i.com/lingpipe/demos/tutorial/sentiment/read-me.html) for more details. You will need external data for this demo, links are on the LingPipe tutorial page, the data needs to be expanded into data/sentiment.
