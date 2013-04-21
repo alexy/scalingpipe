@@ -46,7 +46,10 @@ Code for parsing Senseval training and test files. Multiple senses for each ambi
 
 Implements the Expectation Maximization Algorithm to classify 20 newsgroup text. LingPipe code is in demos/em, the scalingpipe equivalent is in the package o.s.em. Read the LingPipe [Expectation Maximization Tutorial](http://alias-i.com/lingpipe/demos/tutorial/em/read-me.html) for more details. You will need to download the 20 newsgroup data (links on the LingPipe tutorial page), and the scalingpipe code expects it under the directory data/20newsgroups. Note that the code takes an extremely long time to complete - this is expected, the Java version takes about 4 hours to complete per the tutorial page.
 
-## Character Language Modeling - lm
+## Character Language Modeling 
+
+Demo code demonstrating usage of a Character and Token Language model. Both models are trained on the medline/medsamp2010.xml file provided with the LingPipe distribution, and are used to calculate probability of unseen sentences. The code differs from that in the LingPipe demos, but the information in [LingPipe Character LM Tutorial](http://alias-i.com/lingpipe/demos/tutorial/lm/read-me.html) should still prove useful. LingPipe code is in demos/lm, scalingpipe code is in o.s.langmodel.
+
 ## Singular Value Decomposition - svd
 ## Conditional Random Fields - crf
 
