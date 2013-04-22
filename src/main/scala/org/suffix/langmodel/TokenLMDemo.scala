@@ -1,12 +1,12 @@
 package org.suffix.langmodel
 
 import java.io.File
-import com.aliasi.tokenizer.IndoEuropeanTokenizerFactory
-import com.aliasi.lm.TokenizedLM
-import com.aliasi.lingmed.medline.parser.MedlineParser
+
 import org.xml.sax.InputSource
-import com.aliasi.lingmed.medline.parser.MedlineHandler
-import com.aliasi.lingmed.medline.parser.MedlineCitation
+
+import com.aliasi.lingmed.medline.parser.{MedlineCitation, MedlineHandler, MedlineParser}
+import com.aliasi.lm.TokenizedLM
+import com.aliasi.tokenizer.IndoEuropeanTokenizerFactory
 
 object TokenLMDemo extends App {
 

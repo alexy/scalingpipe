@@ -63,7 +63,10 @@ You will need a MySQL server to run this example. The SQL to build the database 
 
 Finds interesting phrases based on collocation frequency of a word pair being higher than expected. The LingPipe code is in demos/interestingPhrases, the correspnding scalingpipe code is in the package o.s.sips. Read the [LingPipe Phrases Tutorial](http://alias-i.com/lingpipe/demos/tutorial/interestingPhrases/read-me.html) for more details. The data for this demo is included in the LingPipe distribution.
 
-## Spelling Correction - querySpellChecker
+## Spelling Correction
+
+Demo for query spell checking using a 5-gram character language model over tokens in a Lucene index. The LingPipe code is in demos/querySpellCheck, the corresponding scalingpipe code is in package o.s.spell. Read the [LingPipe Spelling Tutorial](http://alias-i.com/lingpipe/demos/tutorial/querySpellChecker/read-me.html). Data for this demo is included with the LingPipe distribution.
+
 ## Hyphenation and Syllabification - hyphenation (data d/l-ed)
 ## Chinese Word Segmentation - chineseTokens
 ## Logistic Regression - logistic-regression
