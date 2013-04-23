@@ -67,7 +67,10 @@ Finds interesting phrases based on collocation frequency of a word pair being hi
 
 Demo for query spell checking using a 5-gram character language model over tokens in a Lucene index. The LingPipe code is in demos/querySpellCheck, the corresponding scalingpipe code is in package o.s.spell. Read the [LingPipe Spelling Tutorial](http://alias-i.com/lingpipe/demos/tutorial/querySpellChecker/read-me.html). Data for this demo is included with the LingPipe distribution.
 
-## Hyphenation and Syllabification - hyphenation (data d/l-ed)
+## Hyphenation and Syllabification
+
+Demo for hyphenation using the Moby dataset (needs to be downloaded) only, did not do the demos against the Webster and Celex datasets. LingPipe code is in demos/hyphenation and corresponding scalingpipe code is in package o.s.hyphen. Read teh [LingPipe Hyphenation & Syllabification Tutorial](http://alias-i.com/lingpipe/demos/tutorial/hyphenation/read-me.html) for more information.
+
 ## Chinese Word Segmentation - chineseTokens
 ## Logistic Regression - logistic-regression
 
