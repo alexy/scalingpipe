@@ -50,7 +50,10 @@ Implements the Expectation Maximization Algorithm to classify 20 newsgroup text.
 
 Demo code demonstrating usage of a Character and Token Language model. Both models are trained on the medline/medsamp2010.xml file provided with the LingPipe distribution, and are used to calculate probability of unseen sentences. The code differs from that in the LingPipe demos, but the information in [LingPipe Character LM Tutorial](http://alias-i.com/lingpipe/demos/tutorial/lm/read-me.html) should still prove useful. LingPipe code is in demos/lm, scalingpipe code is in o.s.langmodel.
 
-## Singular Value Decomposition - svd
+## Singular Value Decomposition
+
+Demo code for SVD and LSI functionality in LingPipe. LingPipe demo code is in demos/svd and corresponding scalingpipe code is in o.s.svd. More information in the [LingPipe SVD Tutorial](http://alias-i.com/lingpipe/demos/tutorial/svd/read-me.html). Token Bigram SVD Demos use a single file from the Gutenberg Project - LingPipe tutorial uses Pride and Prejudice, scalingpipe demo uses Alice in Wonderland (already had that lying around).
+
 ## Conditional Random Fields - crf
 
 ## Database Text Mining
