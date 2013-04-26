@@ -75,7 +75,10 @@ Demo for query spell checking using a 5-gram character language model over token
 Demo for hyphenation using the Moby dataset (needs to be downloaded) only, did not do the demos against the Webster and Celex datasets. LingPipe code is in demos/hyphenation and corresponding scalingpipe code is in package o.s.hyphen. Read teh [LingPipe Hyphenation & Syllabification Tutorial](http://alias-i.com/lingpipe/demos/tutorial/hyphenation/read-me.html) for more information.
 
 ## Chinese Word Segmentation - chineseTokens
-## Logistic Regression - logistic-regression
+
+## Logistic Regression
+
+Demonstrates the use of the LingPipe Logistic regression module to do multi-category classification of structured and text data, regularization using priors and discrete choice analysis. LingPipe code is under demos/logistic-regression, scalingpipe code is in package o.s.logreg. Data is either embedded inside the code or uses the 4-newsgroup data supplied with the LingPipe distribution. More information in the [LingPipe Logistic Regression Tutorial](http://alias-i.com/lingpipe/demos/tutorial/logistic-regression/read-me.html).
 
 ## Topic Classification
 
