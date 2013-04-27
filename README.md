@@ -86,7 +86,7 @@ Demonstrates the use of the LingPipe Logistic regression module to do multi-cate
 
 Demo of classifying topic for 4 newsgroup (data supplied with LingPipe distribution) and cross validating and evaluating the classifiers. LingPipe code is in demos/tutorial/classify, and corresponding scalingpipe code is in o.s.classify. More details on the [LingPipe Classification Tutorial](http://alias-i.com/lingpipe/demos/tutorial/classify/read-me.html).
 
-## Language Identification - langid
+## Language Identification
 
 Demo for training, cross-validating and using a language detection classifier using the Leipzig multi-language corpus. LingPipe code is in demos/tutorial/langid and corrsponding scalingpipe code is in o.s.langdetect. See the [LingPipe Language ID Tutorial](http://alias-i.com/lingpipe/demos/tutorial/langid/read-me.html) for more information.
 
@@ -94,6 +94,8 @@ Data needs to be downloaded manually, and the sentences.txt from each language d
 
 ## Clustering - cluster
 
-## Sentiment Analysis - sentiment
+Demos to illustrate clustering features in LingPipe. Some of the demos will need the [Wormbase dataset](ftp://ftp.wormbase.org/pub/wormbase/datasets-wormbase/literature). LingPipe code is under demos/tutorials/cluster, corresponding scalingpipe code is in o.s.cluster. More information in the [LingPipe Clustering Tutorial](http://alias-i.com/lingpipe/demos/tutorial/cluster/read-me.html).
+
+## Sentiment Analysis
 
 Demo for doing polarity and subjectivity analysis. LingPipe code is in demos/tutorial/sentiment and corresponding scalingpipe code is in o.s.sentiment. See the [LingPipe Sentiment Tutorial](http://alias-i.com/lingpipe/demos/tutorial/sentiment/read-me.html) for more details. You will need external data for this demo, links are on the LingPipe tutorial page, the data needs to be expanded into data/sentiment.
